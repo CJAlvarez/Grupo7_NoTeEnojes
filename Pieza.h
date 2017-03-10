@@ -4,9 +4,10 @@
 #include <ncurses.h>
 
 class Pieza {
-	int color;
-	int dentro;
-	int final;
+	protected:
+		int color;
+		int dentro;
+		int final;
 
 	public: 
 		Pieza();
@@ -15,7 +16,7 @@ class Pieza {
 
 		int getColor();
 
-		int EntrarTablero();
-		int ZonaFinal();
-		int SalirTablero();
+		virtual int EntrarTablero();
+		virtual int ZonaFinal();
+		virtual int SalirTablero();
 };
