@@ -17,14 +17,13 @@ class Pieza {
 
 		int getColor();
 
-		/// @param dado
-		virtual int mover(int);
-
 		// @return x
 		int getX();
 		// @return y
 		int getY();
 		
+		// @param dado
+		int mover(int);
 		virtual int EntrarTablero();	
 		virtual int ZonaFinal();		
 		virtual int SalirTablero();

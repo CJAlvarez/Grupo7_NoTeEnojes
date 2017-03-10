@@ -15,9 +15,7 @@ int Pieza::getColor() {
 	return color;
 }
 
-int Pieza::mover(int dado) {	
-	return 0;	
-}
+
 
 int Pieza::getX() {
 	return x;
