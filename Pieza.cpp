@@ -15,10 +15,13 @@ int Pieza::getColor() {
 	return color;
 }
 
+<<<<<<< HEAD
 int Pieza::mover(int dado) {
 	return -1;
 }
 
+=======
+>>>>>>> b0598726b865f85f3ea86c8dbfc374a67d8c24ec
 int Pieza::getX() {
 	return x;
 }

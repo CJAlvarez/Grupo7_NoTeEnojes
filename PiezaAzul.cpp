@@ -5,12 +5,6 @@ PiezaAzul::PiezaAzul() : Pieza() {}
 
 PiezaAzul::PiezaAzul(int color) : Pieza(color) {}
 
-int PiezaAzul::mover(int dado) {
-	if(dado = -1) {
-
-	}
-}
-
 int PiezaAzul::EntrarTablero() {
 	dentro = 1;
 	return 0;

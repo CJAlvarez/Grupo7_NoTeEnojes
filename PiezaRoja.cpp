@@ -1,9 +1,9 @@
 // PiezaRoja.cpp
 #include "PiezaRoja.h"
 
-PiezaAzul::PiezaRoja() : Pieza() {}
+PiezaRoja::PiezaRoja() : Pieza() {}
 
-PiezaAzul::PiezaRoja(int color) : Pieza(color) {}
+PiezaRoja::PiezaRoja(int color) : Pieza(color) {}
 
 int PiezaRoja::EntrarTablero() {
 	dentro = 1;
