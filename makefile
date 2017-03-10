@@ -1,20 +1,20 @@
-Juego:	Pieza.o Amarilla.o Azul.o Roja.o Verde.o Main.o
-	g++ Pieza.o Amarilla.o Azul.o Roja.o Verde.o Main.o -o juego -incurses -std=c++11
+juego:	Pieza.o PiezaAmarilla.o PiezaAzul.o PiezaRoja.o PiezaVerde.o main.o
+	g++ Pieza.o PiezaAmarilla.o PiezaAzul.o PiezaRoja.o PiezaVerde.o main.o -o juego -lncurses -std=c++11
 
-Main.o:	Pieza.h PiezaAmarilla.h PiezaAzul.h PiezaRoja.h PiezaVerde.h main.cpp
-	g++ -c main.cpp -incurses -std=c++11
+main.o:	Pieza.h PiezaAmarilla.h PiezaAzul.h PiezaRoja.h PiezaVerde.h main.cpp
+	g++ -c main.cpp -lncurses -std=c++11
 
 Pieza.o:	Pieza.h Pieza.cpp
-	g++ -c Pieza.cpp -incurses -std=c++11
+	g++ -c Pieza.cpp -lncurses -std=c++11
 
-Amarilla.o:	Pieza.h PiezaAmarilla.h PiezaAmarilla.cpp
-	g++ -c PiezaAmarilla.cpp -incurses -std=c++11
+PiezaAmarilla.o:	Pieza.h PiezaAmarilla.h PiezaAmarilla.cpp
+	g++ -c PiezaAmarilla.cpp -lncurses -std=c++11
 
-Azul.o:	Pieza.h PiezaAzul.h PiezaAzul.cpp
-	g++ -c PiezaAzul.cpp -incurses -std=c++
+PiezaAzul.o:	Pieza.h PiezaAzul.h PiezaAzul.cpp
+	g++ -c PiezaAzul.cpp -lncurses -std=c++11
 
-Roja.o:	Pieza.h PiezaRoja.h PiezaRoja.cpp
-	g++ -c PiezaRoja.cpp -incurses -std=c++11
+PiezaRoja.o:	Pieza.h PiezaRoja.h PiezaRoja.cpp
+	g++ -c PiezaRoja.cpp -lncurses -std=c++11
 
-Verde.o:	Pieza.h PiezaVerde.h PiezaVerde.cpp
-	g++ -c PiezaVerde.cpp -incurses -std=c++11
+PiezaVerde.o:	Pieza.h PiezaVerde.h PiezaVerde.cpp
+	g++ -c PiezaVerde.cpp -lncurses -std=c++11
