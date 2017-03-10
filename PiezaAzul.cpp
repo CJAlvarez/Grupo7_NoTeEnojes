@@ -32,7 +32,7 @@ int PiezaAzul::mover(int dado)
 	}
   else if (x==14 && y==8) {
     int restaX = dado - x;
-    if (restaY<8){
+    if (restaX<8){
       x = 8;
       return 1;
     }

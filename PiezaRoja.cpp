@@ -7,7 +7,7 @@ PiezaRoja::PiezaRoja(int color) : Pieza(color) {}
 
 int PiezaRoja::EntrarTablero() {
 	dentro = 1;
-	x=14
+	x=14;
 	y=0;
 	return 0;
 }
@@ -32,7 +32,7 @@ int PiezaRoja::mover(int dado)
 	}
   else if (x==8 && y==0) {
     int sumaY = dado + y;
-    if (restaY>8){
+    if (sumaY>8){
       y = 8;
       return 1;
     }

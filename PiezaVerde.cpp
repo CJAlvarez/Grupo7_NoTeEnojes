@@ -15,7 +15,7 @@ int PiezaVerde::EntrarTablero()
   dentro = 1;
   x = 0;
   y = 0;
-  return 0:
+  return 0;
 }
 
 int PiezaVerde::ZonaFinal()
@@ -32,7 +32,7 @@ int PiezaVerde::mover(int dado)
 	}
   else if (x==0 && y==8) {
     int sumaX = x + dado;
-    if (restaX>8){
+    if (sumaX>8){
       x = 8;
       return 1;
     }

@@ -2,12 +2,12 @@
 #include "Pieza.h"
 
 Pieza::Pieza() {
-	color = dentro = final = x = y = 0;
+	color = dentro = finalZ = x = y = 0;
 }
 
 Pieza::Pieza(int color) {
 	this -> color = color;
-	dentro = final = 0;
+	dentro = finalZ = 0;
 	mover(-1);
 }
 
@@ -48,6 +48,6 @@ int Pieza::ZonaFinal() {
 }
 
 int Pieza::SalirTablero() {
-	dentro = final = 0;
+	dentro = finalZ = 0;
 	return 0;
 }
