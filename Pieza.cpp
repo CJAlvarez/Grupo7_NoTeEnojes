@@ -2,7 +2,7 @@
 #include "Pieza.h"
 
 Pieza::Pieza() {
-	color = dentro = final = x = y = 0;	
+	color = dentro = final = x = y = 0;
 }
 
 Pieza::Pieza(int color) {
@@ -15,8 +15,8 @@ int Pieza::getColor() {
 	return color;
 }
 
-int Pieza::mover(int dado) {	
-	return 0;	
+int Pieza::mover(int dado) {
+	return -1;
 }
 
 int Pieza::getX() {
@@ -38,6 +38,6 @@ int Pieza::ZonaFinal() {
 }
 
 int Pieza::SalirTablero() {
-	dentro = final = 0;	
+	dentro = final = 0;
 	return 0;
 }
