@@ -9,7 +9,8 @@ class PiezaAzul : public Pieza {
 		// @param color
 		PiezaAzul(int);
 
-		// @param dado		
+		// @param dado
+		virtual int mover(int);
 		virtual int EntrarTablero();
 		virtual int ZonaFinal();
 		virtual int SalirTablero();

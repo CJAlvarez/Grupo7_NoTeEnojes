@@ -7,7 +7,7 @@ class Pieza {
 	protected:
 		int color;
 		int dentro;
-		int final;
+		int finalZ;
 		int x, y;
 
 	public:
@@ -21,16 +21,13 @@ class Pieza {
 		int getX();
 		// @return y
 		int getY();
-<<<<<<< HEAD
+
+		int getFinalZ();
+		int getDentro();
 
 		virtual int EntrarTablero();
 		virtual int ZonaFinal();
-=======
-		
 		// @param dado
-		int mover(int);
-		virtual int EntrarTablero();	
-		virtual int ZonaFinal();		
->>>>>>> b0598726b865f85f3ea86c8dbfc374a67d8c24ec
+		virtual int mover(int);
 		virtual int SalirTablero();
 };

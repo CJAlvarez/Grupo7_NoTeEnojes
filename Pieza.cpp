@@ -15,13 +15,10 @@ int Pieza::getColor() {
 	return color;
 }
 
-<<<<<<< HEAD
 int Pieza::mover(int dado) {
 	return -1;
 }
 
-=======
->>>>>>> b0598726b865f85f3ea86c8dbfc374a67d8c24ec
 int Pieza::getX() {
 	return x;
 }
@@ -30,13 +27,23 @@ int Pieza::getY() {
 	return y;
 }
 
+int Pieza::getFinalZ()
+{
+	return finalZ;
+}
+
+int Pieza::getDentro()
+{
+	return dentro;
+}
+
 int Pieza::EntrarTablero() {
 	dentro = 1;
 	return 0;
 }
 
 int Pieza::ZonaFinal() {
-	final = 1;
+	finalZ = 1;
 	return 0;
 }
 

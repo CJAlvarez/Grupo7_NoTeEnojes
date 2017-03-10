@@ -12,7 +12,7 @@ public:
   PiezaVerde(int);
 
   //funciones polimorficas
-  virtual int mover(int);x
+  virtual int mover(int);
   virtual int EntrarTablero();
   virtual int ZonaFinal();
   virtual int SalirTablero();
