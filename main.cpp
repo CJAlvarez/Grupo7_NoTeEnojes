@@ -17,10 +17,11 @@ using namespace std;
 int dado ();
 
 //funcion de eliminacion de memoria
-void eliminaMatriz(int**);
+void eliminaMatriz(string**);
 
 int main()
 {
+  string** tablero  = new string*[15];
   return 0;
 }
 
@@ -35,7 +36,7 @@ int dado()
   return numero;
 }
 
-void eliminaMatriz(int** tablero)
+void eliminaMatriz(string** tablero)
 {
   for (int i=0; i<15; i++){
     delete [] tablero[i];
