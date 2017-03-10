@@ -2,16 +2,29 @@
 #include "Pieza.h"
 
 Pieza::Pieza() {
-	color = dentro = final = 0;
+	color = dentro = final = x = y = 0;	
 }
 
 Pieza::Pieza(int color) {
 	this -> color = color;
 	dentro = final = 0;
+	mover(-1);
 }
 
 int Pieza::getColor() {
 	return color;
+}
+
+int Pieza::mover(int dado) {	
+	return 0;	
+}
+
+int Pieza::getX() {
+	return x;
+}
+
+int Pieza::getY() {
+	return y;
 }
 
 int Pieza::EntrarTablero() {

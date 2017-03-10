@@ -3,11 +3,12 @@
 
 #include <ncurses.h>
 
-class Pieza {
+class Pieza {	
 	protected:
 		int color;
 		int dentro;
 		int final;
+		int x, y;
 
 	public: 
 		Pieza();
@@ -16,7 +17,15 @@ class Pieza {
 
 		int getColor();
 
-		virtual int EntrarTablero();
-		virtual int ZonaFinal();
+		/// @param dado
+		virtual int mover(int);
+
+		// @return x
+		int getX();
+		// @return y
+		int getY();
+		
+		virtual int EntrarTablero();	
+		virtual int ZonaFinal();		
 		virtual int SalirTablero();
 };
