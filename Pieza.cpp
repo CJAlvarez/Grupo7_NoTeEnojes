@@ -15,8 +15,6 @@ int Pieza::getColor() {
 	return color;
 }
 
-
-
 int Pieza::getX() {
 	return x;
 }
