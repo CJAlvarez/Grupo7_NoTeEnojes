@@ -26,14 +26,14 @@ int PiezaVerde::ZonaFinal()
 
 int PiezaVerde::mover(int dado)
 {
-  if (x==8 && y==8) {
+  if (x==7 && y==7) {
 		//cout << "La pieza ya esta en el centro" << endl;
 		return 1;
 	}
-  else if (x==0 && y==8) {
+  else if (x==0 && y==7) {
     int sumaX = x + dado;
-    if (sumaX>8){
-      x = 8;
+    if (sumaX>7){
+      x = 7;
       return 1;
     }
     else {

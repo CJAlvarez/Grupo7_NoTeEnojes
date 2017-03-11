@@ -26,14 +26,14 @@ int PiezaAzul::SalirTablero() {
 
 int PiezaAzul::mover(int dado)
 {
-	if (x==8 && y==8) {
+	if (x==7 && y==7) {
 		//cout << "La pieza ya esta en el centro" << endl;
 		return 1;
 	}
-  else if (x==14 && y==8) {
+  else if (x==14 && y==7) {
     int restaX = dado - x;
-    if (restaX<8){
-      x = 8;
+    if (restaX<7){
+      x = 7;
       return 1;
     }
     else {

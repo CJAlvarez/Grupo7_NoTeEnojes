@@ -12,14 +12,14 @@ PiezaAmarilla::PiezaAmarilla(int pColor) : Pieza(pColor)
 
 int PiezaAmarilla::mover(int dado)
 {
-  if (x==8 && y==8) {
+  if (x==7 && y==7) {
 		//cout << "La pieza ya esta en el centro" << endl;
 		return 1;
 	}
-  else if (x==8 && y==14) {
+  else if (x==7 && y==14) {
     int restaY = dado - y;
-    if (restaY<8){
-      y = 8;
+    if (restaY<7){
+      y = 7;
       return 1;
     }
     else {
