@@ -32,8 +32,8 @@ int PiezaVerde::mover(int dado)
 	}
   else if (x==0 && y==7) {
     int sumaX = x + dado;
-    if (sumaX>8){
-      x = 8;
+    if (sumaX>7){
+      x = 7;
       return 1;
     }
     else {

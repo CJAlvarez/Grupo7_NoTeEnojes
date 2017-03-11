@@ -19,7 +19,7 @@ int PiezaAmarilla::mover(int dado)
   else if (x==7 && y==14) {
     int restaY = dado - y;
     if (restaY<7){
-      y = 8;
+      y = 7;
       return 1;
     }
     else {
